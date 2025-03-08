@@ -5,15 +5,33 @@
     </a>
 </div>
 
+
 <!--
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
 
 <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_presence_count&suffix=%20online&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
--->
+
 
 <div align="center">
 
 ![hyde_banner](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyde_banner.png)
+
+<br>
+-->
+<div align="center">
+
+![hyde_banner](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyde_banner.png)
+
+<br>
+
+ <div style="border: 2px solid #f39c12; padding: 10px; border-radius: 5px; background-color: #fdf2e9; color: #d35400; font-size: 22px;">
+  <strong align="center" style="font-size: 22px;">⚠️ Deprecation Notice:</strong><br>
+    This repository is not maintained anymore. <br>
+  Please refer to <a href="https://github.com/Hyde-project/hyde" style="color: #d35400; text-decoration: underline;">Hyde-project/hyde</a> for the latest updates and contributions.
+</div>
+
+
+<!--
 
 <br>
 
@@ -29,12 +47,16 @@
 
 https://github.com/prasanthrangan/hyprdots/assets/106020512/7f8fadc8-e293-4482-a851-e9c6464f5265
 
-<br><div align="center"><img width="12%" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/arch.png"/><br></div>
+<br><div align="center"><img width="12%" src="Source/assets/Arch.svg"/><br></div>
 
-## Installation
+<a id="installation"></a>  
+<img src="Source/assets/Installation.gif" width="200"/>
+---
 
 The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
 While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
+
+For Nixos support there is a separate project being maintained @ [Hydenix](https://github.com/richen604/hydenix/tree/main)
 
 > [!IMPORTANT]
 > The install script will auto-detect an NVIDIA card and install nvidia-dkms drivers for your kernel.
@@ -46,7 +68,7 @@ While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/De
 To install, execute the following commands:
 
 ```shell
-pacman -Sy git
+pacman -S --needed git base-devel
 git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
@@ -65,7 +87,10 @@ View installation instructions for HyDE in [Hyde-cli - Usage](https://github.com
 Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
 For more details, please refer to the [installation wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
 
-### Updating
+<a id="updating"></a>  
+<img src="Source/assets/Updating.gif" width="200"/>
+---
+
 To update HyDE, you will need to pull the latest changes from GitHub and restore the configs by running the following commands:
 
 ```shell
@@ -86,10 +111,12 @@ For more details, you can refer to [Hyde-cli - dots management wiki](https://git
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Themes
+<a id="themes"></a>  
+<img src="Source/assets/Themes.gif" width="200"/>
+---
 
 All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
-For more information, visit [prasanthrangan/hyde-themes](https://github.com/prasanthrangan/hyde-themes).
+For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes). 
 
 <div align="center">
   <table><tr><td>
@@ -120,7 +147,9 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Styles
+<a id="styles"></a>  
+<img src="Source/assets/Styles.gif" width="200"/>
+---
 
 <div align="center"><table><tr>Theme Select</tr><tr><td>
 <img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/theme_select_1.png"/></td><td>
@@ -166,7 +195,10 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
 
-## Keybindings
+<a id="keybindings"></a>  
+<img src="Source/assets/Keybindings.gif" width="200"/>
+---
+
 
 <div align="center">
 
@@ -181,7 +213,7 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 | <kbd>Super</kbd> + <kbd>L</kbd> | Launch lock screen |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Toggle pin on focused window |
 | <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch logout menu |
-| <kbd>Ctrl</kbd> + <kbd>Esc</kbd> | Toggle waybar |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> | Toggle waybar |
 | <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (kitty) |
 | <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (dolphin) |
 | <kbd>Super</kbd> + <kbd>C</kbd> | Launch text editor (vscode) |
@@ -203,6 +235,7 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Launch wallbash mode select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Launch theme select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Launch style select menu (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Launch theme style select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Launch wallpaper select menu (rofi) |
 | <kbd>Super</kbd> + <kbd>V</kbd> | Launch clipboard (rofi) |
 | <kbd>Super</kbd> + <kbd>K</kbd> | Switch keyboard layout |
@@ -230,4 +263,5 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
   <br>
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
+
 
